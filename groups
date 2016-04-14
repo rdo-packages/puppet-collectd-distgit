@@ -1,5 +1,5 @@
-# UUID          Group Name
-6ddfecad023c6f4fa3ac8c4d2583c502ea675a73 	Non-Interactive Users
-ea81939b60601c254be660ab9b568b87de174b63       	puppet-module-collectd-distgit-core
-8246c8bdec1ccd3026b8656861ad38df4fa0c95f        	puppet-module-collectd-distgit-ptl
-global:Registered-Users		Registered Users
+# UUID                                  	Group Name
+#
+8246c8bdec1ccd3026b8656861ad38df4fa0c95f	puppet/puppet-module-collectd-distgit-ptl
+ea81939b60601c254be660ab9b568b87de174b63	puppet-module-collectd-distgit-core
+global:Registered-Users                 	Registered Users
