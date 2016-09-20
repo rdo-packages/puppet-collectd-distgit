@@ -7,8 +7,8 @@
 
 
 Name:           puppet-collectd
-Version:        XXX
-Release:        XXX
+Version:        5.1.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module for Collectd
 License:        Apache-2.0
 
@@ -50,4 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/module-collectd/
 
 
 %changelog
+* Wed Sep 21 2016 Haikel Guemar <hguemar@fedoraproject.org> - 5.1.0-1.d50e5ae.git
+- Newton update 5.1.0 (d50e5ae34f5963f73625c1ed30cab1399d5610a4)
+
 
