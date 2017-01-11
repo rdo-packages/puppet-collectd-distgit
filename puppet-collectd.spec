@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-module-collectd
-%global commit d50e5ae34f5963f73625c1ed30cab1399d5610a4
+%global commit 2e4e746d8f69823da963305e2d1f7b38d6446c9b
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
@@ -40,13 +40,13 @@ find . \( -name spec -o -name ext \) | xargs rm -rf
 
 %install
 rm -rf %{buildroot}
-install -d -m 0755 %{buildroot}/%{_datadir}/openstack-puppet/modules/module-collectd/
-cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/module-collectd/
+install -d -m 0755 %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
+cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 
 
 %files
-%{_datadir}/openstack-puppet/modules/module-collectd/
+%{_datadir}/openstack-puppet/modules/collectd/
 
 
 %changelog
