@@ -10,7 +10,7 @@ Name:           puppet-collectd
 Version:        XXX
 Release:        XXX
 Summary:        Puppet module for Collectd
-License:        Apache-2.0
+License:        ASL 2.0
 
 URL:            https://github.com/puppet-community/puppet-collectd
 
