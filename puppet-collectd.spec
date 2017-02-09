@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-module-collectd
-%global commit 2e4e746d8f69823da963305e2d1f7b38d6446c9b
+%global commit eb1e0a95cb62fc6cd41f0a2c60fcdf34e7eaf596
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-collectd
-Version:        XXX
-Release:        XXX
+Version:        5.3.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module for Collectd
 License:        ASL 2.0
 
@@ -50,4 +50,6 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 
 %changelog
+* Thu Feb 09 2017 Alfredo Moralejo <amoralej@redhat.com> 5.3.0-1.eb1e0a9git
+- Ocata update 5.3.0 (eb1e0a95cb62fc6cd41f0a2c60fcdf34e7eaf596)
 
