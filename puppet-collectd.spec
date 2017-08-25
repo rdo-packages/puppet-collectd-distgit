@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-module-collectd
-%global commit 2e4e746d8f69823da963305e2d1f7b38d6446c9b
+%global commit b995bdacb244c0416f74ff2414475def8d573e95
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-collectd
-Version:        XXX
-Release:        XXX
+Version:        5.3.1
+Release:        0.1%{?alphatag}%{?dist}
 Summary:        Puppet module for Collectd
 License:        ASL 2.0
 
@@ -50,5 +50,7 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 
 %changelog
+* Fri Aug 25 2017 Alfredo Moralejo <amoralej@redhat.com> 5.3.1-0.1.b995bdagit
+- Pike update 5.3.1-rc0 (b995bdacb244c0416f74ff2414475def8d573e95)
 
 
