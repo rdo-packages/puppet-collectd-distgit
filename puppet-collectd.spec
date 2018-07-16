@@ -1,6 +1,6 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-module-collectd
-%global commit 2e4e746d8f69823da963305e2d1f7b38d6446c9b
+%global commit f0b4d8507ec2719fae6b91e36a6f0d8c665987e8
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
