@@ -7,7 +7,7 @@
 
 
 Name:           puppet-collectd
-Version:        8.0.2
+Version:        10.0.2
 Release:        0%{?alphatag}%{?dist}
 Summary:        Puppet module for Collectd
 License:        ASL 2.0
@@ -50,6 +50,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 
 %changelog
+* Fri Aug 02 2019 Mattthias Runge <mrunge@redhat.com> - 10.0.2
+- sync with rocky version to support feature backports
+
 * Thu Feb 15 2018 RDO <dev@lists.rdoproject.org> 8.0.2-0.93c8d0bgit
 - Update to 8.0.2-rc0 (93c8d0bd32bb5610652f30e785ba6644fc82a8b6)
 
