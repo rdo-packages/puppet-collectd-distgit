@@ -1,14 +1,14 @@
 %{!?upstream_version: %global upstream_version %{commit}}
 %define upstream_name puppet-collectd
-%global commit f0b4d8507ec2719fae6b91e36a6f0d8c665987e8
+%global commit 785a71bd4be0d0e7e96aa6acea3c2120430058fc
 %global shortcommit %(c=%{commit}; echo ${c:0:7})
 # DO NOT REMOVE ALPHATAG
 %global alphatag .%{shortcommit}git
 
 
 Name:           puppet-collectd
-Version:        XXX
-Release:        XXX
+Version:        11.0.0
+Release:        1%{?alphatag}%{?dist}
 Summary:        Puppet module for Collectd
 License:        ASL 2.0
 
@@ -50,5 +50,8 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 
 %changelog
+* Thu Oct 3 2019 RDO <dev@lists.rdoproject.org> 11.0.0-1.785a71bgit
+- Update to post 11.0.0 (785a71bd4be0d0e7e96aa6acea3c2120430058fc)
+
 
 
