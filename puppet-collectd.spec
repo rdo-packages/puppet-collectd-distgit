@@ -53,3 +53,4 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 %changelog
 
+# REMOVEME: error caused by commit https://github.com/voxpupuli/puppet-collectd/commit/b2f7e70fd8f54f62ecaa43dd43031c818fdc9465
