@@ -15,11 +15,9 @@ License:        ASL 2.0
 URL:            https://github.com/voxpupuli/%{upstream_name}
 
 Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
-Patch0001:      0001-Add-backwards-compatibility-in-transition-to-Stdlib-.patch
 
 BuildArch:      noarch
 
-BuildRequires:  git
 Requires:       puppet-stdlib
 Requires:       puppet-concat
 Requires:       puppet >= 2.7.0
@@ -28,7 +26,7 @@ Requires:       puppet >= 2.7.0
 Puppet module for Collectd
 
 %prep
-%autosetup -n %{name}-%{upstream_version} -S git
+%setup -q -n %{name}-%{upstream_version}
 
 find . -type f -name ".*" -exec rm {} +
 find . -size 0 -exec rm {} +
