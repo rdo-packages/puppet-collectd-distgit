@@ -1,21 +1,16 @@
-%global milestone .0rc0
-%{!?upstream_version: %global upstream_version %{commit}}
+%{!?upstream_version: %global upstream_version %{version}}
 %define upstream_name puppet-collectd
-%global commit 60d656ab1063b30f7617caf6e4115cc0050ca2eb
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-# DO NOT REMOVE ALPHATAG
-%global alphatag .%{shortcommit}git
 
 
 Name:           puppet-collectd
-Version:        12.2.1
-Release:        0.2%{?milestone}%{?alphatag}%{?dist}
+Version:        13.0.0
+Release:        1%{?dist}
 Summary:        Puppet module for Collectd
 License:        ASL 2.0
 
 URL:            https://github.com/voxpupuli/%{upstream_name}
 
-Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/%{commit}.tar.gz#/%{upstream_name}-%{shortcommit}.tar.gz
+Source0:        https://github.com/voxpupuli/%{upstream_name}/archive/v%{upstream_version}.tar.gz#/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildArch:      noarch
 
@@ -51,6 +46,9 @@ cp -rp * %{buildroot}/%{_datadir}/openstack-puppet/modules/collectd/
 
 
 %changelog
+* Wed Sep 15 2021 RDO <dev@lists.rdoproject.org> 13.0.0-1
+- Update to 13.0.0
+
 * Thu Mar 25 2021 RDO <dev@lists.rdoproject.org> 12.2.1-0.2.0rc0.60d656agit
 - Update to post 12.2.1-rc0 (60d656ab1063b30f7617caf6e4115cc0050ca2eb)
 
